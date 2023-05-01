@@ -3,8 +3,8 @@ import { Facebook, Instagram, Twitter, YouTube, LocationOn } from '@mui/icons-ma
 
 const Footer = () => {
     return (
-        <footer className="py-4 lg:py-8 px-6 lg:px-20 bg-black text-white flex flex-col lg:flex-row justify-between items-start">
-            <div className="flex flex-row gap-x-4 lg:gap-x-20 mb-8 lg:mb-0">
+        <footer className="py-4 lg:py-8 px-6 lg:px-20 bg-black text-white flex flex-col items-center lg:flex-row justify-between lg:items-start">
+            <div className="flex flex-row justify-between w-full gap-x-4 lg:gap-x-20 mb-8 lg:mb-0 lg:w-auto lg:justify-start">
                 <div className="flex flex-col gap-y-2">
                     <span className="text-base font-medium mb-2">Comprar por categoría</span>
                     <Link to="/" className="text-[#B6B6B6] font-normal hover:text-white ease-in-out duration-300">Más vendidos</Link>
