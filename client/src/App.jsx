@@ -1,10 +1,18 @@
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HomePage, StorePage, ProductDetailPage } from "./pages";
+import { Navbar, Footer } from "./components";
 
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/store" element={<StorePage />} />
+        <Route path="/shoes/:id" element={<ProductDetailPage />} />
+      </Routes>
+      <Footer />
+    </Router>
   )
 }
 
