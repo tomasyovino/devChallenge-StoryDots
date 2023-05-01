@@ -8,7 +8,7 @@ const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className='bg-white w-[100vw]'>
+        <header className='bg-white w-full'>
             <nav className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global'>
                 <div className='flex lg:flex-1'>
                     <Link to="/" className="-m-1.5 p-1.5">
@@ -26,10 +26,10 @@ const Navbar = () => {
                     </button>
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12 lg:items-center">
-                    <Link to={"/"} className="font-semibold leading-6 ease-in-out duration-300 hover:text-indigo-500">
+                    <Link to={"/"} className="font-semibold leading-6 ease-in-out duration-300 hover:text-blue-400">
                         Inicio
                     </Link>
-                    <Link to="/store" className="font-semibold leading-6 ease-in-out duration-300 hover:text-indigo-500">
+                    <Link to="/store" className="font-semibold leading-6 ease-in-out duration-300 hover:text-blue-400">
                         Tienda
                     </Link>
                 </Popover.Group>
@@ -64,14 +64,14 @@ const Navbar = () => {
                             <div className="space-y-2 py-6">
                                 <Link
                                     to=""
-                                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-indigo-500"
+                                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-blue-400"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Inicio
                                 </Link>
                                 <Link
                                     to={"/store"}
-                                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-indigo-500"
+                                    className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-blue-400"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Tienda
