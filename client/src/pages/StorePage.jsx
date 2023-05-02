@@ -20,7 +20,7 @@ const StorePage = () => {
         <h1 className="font-bold">BLACK FRIDAY</h1>
       </div>
       <div className="container mx-auto flex flex-col gap-y-6 px-2 lg:flex-row lg:justify-between lg:items-start">
-        {/*  */}
+        {/* FILTER */}
         <div className="flex justify-between items-center lg:w-3/12 lg:flex-col lg:items-start lg:gap-y-4 lg:shadow-xl lg:rounded-xl lg:p-4">
           <span className="hidden font-medium lg:block">Mostrando {((page - 1) * toShow) + 1} - {Math.min(page * toShow, products?.length)} de {products?.length} artículos</span>
           <div className="flex w-full items-center justify-between lg:flex-col lg:gap-y-6 lg:items-start">
@@ -53,7 +53,7 @@ const StorePage = () => {
           </div>
         </div>
 
-        {/*  */}
+        {/* CARDS */}
         <div className="lg:w-10/12 flex flex-col items-center gap-y-2 lg:items-start">
           <CardContainer products={products} orderBy={orderBy} page={page} toShow={toShow} />
           <Pagination
