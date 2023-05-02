@@ -12,6 +12,17 @@ export const getAllProducts = async (req, res) => {
     };
 };
 
+export const getProduct = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const product = await productDAO.findElementById(id);
+        res.status(200).json(product);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: "Error getting product", error: error.message });
+    };
+};
+
 export const createProduct = async (req, res) => {
     try {
         const { name, description, image_url, price } = req.body;
